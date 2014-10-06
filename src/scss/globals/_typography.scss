@@ -1,0 +1,11 @@
+// This file is sample for project typography. If the project typography is more
+// complex for one file then it should be broken up for project maintainablitlly.
+
+
+// Sample Modifier loop for outputting font color modifiers with a SASS map.
+// The map is located in variables/index file.
+@each $color, $textcolor in $colors {
+  .font--#{$color} {
+    color: $textcolor;
+  }
+}

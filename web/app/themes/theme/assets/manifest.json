@@ -1,0 +1,9 @@
+{
+  "dest": "web/app/themes/theme/assets/manifest.json",
+  "querystring": true,
+  "web/app/themes/theme/assets/css/main.min.css": {
+    "path": "web/app/themes/theme/assets/css/main.min.css",
+    "hash": "07f7d64ba7205809b9209343ab8b851f",
+    "handle": "roots_css"
+  }
+}

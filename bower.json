@@ -1,0 +1,24 @@
+{
+  "name": "ErikAkersSite",
+  "version": "1.0.0",
+  "description": "My personal site.",
+  "authors": [
+    "Erik Akers"
+  ],
+  "license": "MIT",
+  "homepage": "erikakers.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "~5.4.4",
+    "bourbon": "~4.0.2",
+    "jquery-tiny-pubsub": "~0.7.0",
+    "lodash": "~2.4.1"
+  }
+}

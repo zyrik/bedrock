@@ -1,34 +1,25 @@
 {
-  "name": "roots/bedrock",
+  "name": "erikakers-com",
   "type": "project",
   "license": "MIT",
-  "description": "A modern WordPress stack",
-  "homepage": "http://roots.io/wordpress-stack/",
+  "description": "Erik Akers dot com.",
+  "homepage": "http://erikakers.com",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Erik Akers",
+      "email": "eakers@zyrik.com",
+      "homepage": "https://erikakers.com"
     }
   ],
-  "keywords": [
-    "wordpress", "stack", "capistrano", "composer", "vagrant", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "http://discourse.roots.io/category/bedrock"
-  },
   "config": {
     "preferred-install": "dist",
     "generate-salts": true
   },
   "autoload": {
-    "psr-0": {"Roots\\Bedrock\\Installer": "scripts"}
+    "psr-0": {
+        "Roots\\Bedrock\\Installer": "scripts",
+        "": "app"
+    }
   },
   "scripts": {
     "post-root-package-install": ["Roots\\Bedrock\\Installer::addSalts"]
@@ -67,7 +58,7 @@
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
-    "webroot-dir": "web/wp",
+    "webroot-dir": "web/core",
     "webroot-package": "wordpress/wordpress"
   }
 }

@@ -1,31 +1,11 @@
-# WordPress
-web/wp
-web/.htaccess
-
-# WP-CLI
-db-sync
-sql-dump-*.sql
-
 # Dotenv
 .env
 .env.*
 !.env.example
 
-# Application
-web/app/plugins/*
-!web/app/plugins/.gitkeep
-web/app/mu-plugins/*
-!web/app/mu-plugins/.gitkeep
-web/app/upgrade
-web/app/uploads/*
-!web/app/uploads/.gitkeep
-!web/app/mu-plugins/disallow-indexing.php
-!web/app/mu-plugins/register-theme-directory.php
-!web/app/mu-plugins/bedrock-autoloader.php
-
-# Vendor (e.g. Composer)
-vendor/*
-!vendor/.gitkeep
+# WP-CLI
+db-sync
+sql-dump-*.sql
 
 # Node Package Manager
 node_modules
@@ -33,3 +13,22 @@ node_modules
 # Vagrant
 bin
 .vagrant
+
+# Application
+web/.htaccess
+web/app/upgrade
+web/app/uploads/*
+web/app/themes/theme/assets/scripts/vendor/modernizr.js
+web/app/themes/theme/assets/scripts/vendor/plugins.js
+web/app/themes/theme/assets/scripts/vendor/mobile.js
+web/app/themes/theme/assets/scripts/loader.js
+web/app/themes/theme/assets/scripts/polyfills.js
+web/app/themes/theme/assets/scripts/main.js
+web/app/themes/theme/assets/css/main.css
+web/app/themes/theme/assets/css/main.css.map
+web/app/themes/theme/assets/css/framework.css
+web/app/themes/theme/assets/css/framework.css.map
+
+# Other Stuff
+.sass-cache
+src/vendor
